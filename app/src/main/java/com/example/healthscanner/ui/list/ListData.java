@@ -1,22 +1,15 @@
 package com.example.healthscanner.ui.list;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ListData {
     private String titleStr ;
     private String descStr ;
-
-    public void setTitle(String title) {
-        titleStr = title ;
-    }
-    public void setDesc(String desc) {
-        descStr = desc ;
-    }
-
-    public String getTitle() {
-        return this.titleStr ;
-    }
-    public String getDesc() {
-        return this.descStr ;
-    }
+    private int imageResourceID;
 }
